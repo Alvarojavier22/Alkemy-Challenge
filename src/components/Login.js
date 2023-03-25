@@ -53,7 +53,8 @@ function Login() {
           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu0BaBqSYNu5FoI5iuPtnSi4eN3kRcdAKJKw&usqp=CAU' />
           </div>
             )
-        console.log(res.data);
+            const tokenRecibido = res.data.token;
+            localStorage.setItem('token', tokenRecibido);
       })
   }
 
